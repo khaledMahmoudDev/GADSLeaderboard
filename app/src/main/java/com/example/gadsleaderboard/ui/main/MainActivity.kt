@@ -1,8 +1,9 @@
-package com.example.gadsleaderboard
+package com.example.gadsleaderboard.ui.main
 
 import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.widget.ViewPager2
+import com.example.gadsleaderboard.R
 import com.example.gadsleaderboard.ui.adapter.MainViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
