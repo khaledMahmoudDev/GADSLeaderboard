@@ -21,18 +21,19 @@ Using Glide to show images
 Using Binding Adapter
 
 ScrenShots 
-![Image 1](https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen1.png  =250x250)
+<img src="https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen1.png" width="400" height="790">
 
-![Image 2](https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen2.png  =250x250)
+<img src="https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen2.png" width="400" height="790">
 
-![Image 3](https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen3.png  =250x250)
+<img src="https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen3.png" width="400" height="790">
 
-![Image 4](https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen4.png  =250x250)
+<img src="https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen4.png" width="400" height="790">
 
-![Image 5](https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen5.png  =250x250)
+<img src="https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen5.png" width="400" height="790">
 
-![Image 6](https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen6.png  =250x250)
+<img src="https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen6.png" width="400" height="790">
 
-![Image 7](https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen7.png  =250x250)
+<img src="https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen7.png" width="400" height="790">
 
-![Image 8](https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen8.png  =250x250)
+<img src="https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen8.png" width="400" height="790">
+
