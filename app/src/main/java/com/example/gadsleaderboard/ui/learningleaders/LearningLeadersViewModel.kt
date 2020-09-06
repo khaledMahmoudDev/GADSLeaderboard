@@ -29,13 +29,13 @@ class LearningLeadersViewModel : ViewModel() {
         scope.launch {
             val call = TopLearnersClient.topLearnersService.getTopLearningLeadersAsync()
 
-            val list = call.await()
+            try {
+                _leadersList.value = call.await()
+            } catch (e: Exception) {
 
-            if (!list.isNullOrEmpty()) {
-                _leadersList.value = list
-                Log.d("leader before", list.toString())
+                Log.d("resultNow ", "error${e.message}")
+
             }
-
         }
     }
 }

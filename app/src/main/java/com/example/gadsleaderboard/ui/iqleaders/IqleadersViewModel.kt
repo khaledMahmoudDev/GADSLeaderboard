@@ -30,17 +30,14 @@ class IqleadersViewModel : ViewModel() {
 
         scope.launch {
             val call = TopLearnersClient.topLearnersService.getTopSkillIqAsync()
+            try {
 
-            val list = call.await()
+                _iqList.value = call.await()
+            }catch (e: Exception) {
 
+                Log.d("resultNow ", "error${e.message}")
 
-            if (!list.isNullOrEmpty()) {
-                _iqList.value = list
-                Log.d("before iq", list.toString())
             }
-
-
-            Log.d("after iq", list.toString())
         }
     }
 }
