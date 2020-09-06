@@ -32,9 +32,15 @@ class IqleadersViewModel : ViewModel() {
             val call = TopLearnersClient.topLearnersService.getTopSkillIqAsync()
 
             val list = call.await()
-            _iqList.value = list
 
-            Log.d("iq", list.toString())
+
+            if (!list.isNullOrEmpty()) {
+                _iqList.value = list
+                Log.d("before iq", list.toString())
+            }
+
+
+            Log.d("after iq", list.toString())
         }
     }
 }

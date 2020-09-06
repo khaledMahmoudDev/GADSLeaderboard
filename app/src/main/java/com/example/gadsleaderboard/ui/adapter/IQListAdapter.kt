@@ -12,7 +12,7 @@ class IQListAdapter(private val iqListClickListener: IqListClickListener) :
     ListAdapter<TopSkillIqModel, IQListAdapter.TopSkillIqViewHolder>(IqDiffUtil) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TopSkillIqViewHolder {
-        return TopSkillIqViewHolder(IqSkillRowElementBinding.inflate(LayoutInflater.from(parent.context)))
+        return TopSkillIqViewHolder.from(parent)
     }
 
     override fun onBindViewHolder(holder: TopSkillIqViewHolder, position: Int) {
@@ -20,7 +20,7 @@ class IQListAdapter(private val iqListClickListener: IqListClickListener) :
     }
 
 
-    class TopSkillIqViewHolder(var binding: IqSkillRowElementBinding) :
+    class TopSkillIqViewHolder private constructor(val binding: IqSkillRowElementBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(topSkillIQ: TopSkillIqModel, clickListener: IqListClickListener) {
             binding.iqElement = topSkillIQ
@@ -29,12 +29,21 @@ class IQListAdapter(private val iqListClickListener: IqListClickListener) :
 
         }
 
+        companion object {
+            fun from(parent: ViewGroup): TopSkillIqViewHolder {
+                val layoutInflater = LayoutInflater.from(parent.context)
+                val binding = IqSkillRowElementBinding.inflate(layoutInflater, parent, false)
+                return TopSkillIqViewHolder(binding)
+
+            }
+        }
+
     }
 
 
     companion object IqDiffUtil : DiffUtil.ItemCallback<TopSkillIqModel>() {
         override fun areItemsTheSame(oldItem: TopSkillIqModel, newItem: TopSkillIqModel): Boolean {
-            return oldItem.name == newItem.name
+            return oldItem == newItem
         }
 
         override fun areContentsTheSame(
