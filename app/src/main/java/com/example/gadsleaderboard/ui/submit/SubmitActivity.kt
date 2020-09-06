@@ -37,7 +37,7 @@ class SubmitActivity : AppCompatActivity() {
                     Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show()
                 }
                 SubmitStatus.LASTNAME_ERROR -> {
-                    toastMessage = "please enter first name"
+                    toastMessage = "please enter last name"
                     Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show()
                 }
                 SubmitStatus.LINK_ERROR -> {
