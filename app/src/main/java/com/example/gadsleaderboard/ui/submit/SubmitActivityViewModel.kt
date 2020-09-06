@@ -50,7 +50,6 @@ class SubmitActivityViewModel(application: Application) : AndroidViewModel(appli
     private fun showDialog(context: Context) {
 
         val dialog = Dialog(context)
-        dialog.window!!.setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(false)
 

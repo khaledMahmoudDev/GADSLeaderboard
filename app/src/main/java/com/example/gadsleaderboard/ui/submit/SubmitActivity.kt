@@ -34,15 +34,19 @@ class SubmitActivity : AppCompatActivity() {
             when (it) {
                 SubmitStatus.FIRSTNAME_ERROR -> {
                     toastMessage = "please enter first name"
+                    Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show()
                 }
                 SubmitStatus.LASTNAME_ERROR -> {
                     toastMessage = "please enter first name"
+                    Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show()
                 }
                 SubmitStatus.LINK_ERROR -> {
                     toastMessage = "please enter Link "
+                    Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show()
                 }
                 SubmitStatus.EMAIL_ERROR -> {
                     toastMessage = "please enter Email"
+                    Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show()
                 }
                 SubmitStatus.UPLOAD_FAILED -> {
 
@@ -54,7 +58,6 @@ class SubmitActivity : AppCompatActivity() {
                 }
             }
 
-            Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show()
 
         })
 
