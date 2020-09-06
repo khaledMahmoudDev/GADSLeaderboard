@@ -21,6 +21,8 @@ Using Glide to show images
 Using Binding Adapter
 
 ScrenShots 
+
+************************************************************************************************
 <img src="https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen1.png" width="400" height="790">
 
 <img src="https://github.com/khaledMahmoudDev/GADSLeaderboard/blob/master/screenShots/screen2.png" width="400" height="790">
